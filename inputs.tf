@@ -8,7 +8,7 @@ variable "image" {
 
 variable "server_name" {
   type        = string
-  description = "The name of the machine image to use for the server."
+  description = "The name of the machine to use for the server."
 }
 
 variable "region" {
@@ -26,4 +26,10 @@ variable "size" {
 variable "ssh_fp" {
   type        = list(string)
   description = "The footprint of ssh key."
+}
+
+variable "machines" {
+  default     = 1
+  type        = number
+  description = "Numbers of droplets to be created"
 }
