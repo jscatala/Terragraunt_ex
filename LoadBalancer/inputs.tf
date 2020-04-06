@@ -10,3 +10,11 @@ variable "region" {
   type        = string
   description = "Region where to place the infra."
 }
+
+variable "access_key" {}
+
+variable "secret_key" {}
+
+variable "key" {}
+
+variable "bucket" {}

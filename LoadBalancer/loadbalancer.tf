@@ -2,10 +2,10 @@ data "terraform_remote_state" "do" {
   backend = "s3"
 
   config = {
-    bucket     = "tfstates"
-    key        = "terragrunt/module/droplets.tfstate"
-    access_key = "SE2ZBMAMHBA5BSEIE5DS"
-    secret_key = "MHbS5tbxHh/ifdE3/4flRshDpW8aCxmqnixafgtFOQI"
+    bucket     = var.bucket 
+    key        = var.key
+    access_key = var.access_key
+    secret_key = var.secret_key
     endpoint   = "https://sfo2.digitaloceanspaces.com"
     region = "us-west-1"
     skip_requesting_account_id  = true
