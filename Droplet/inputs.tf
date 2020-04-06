@@ -29,7 +29,7 @@ variable "ssh_fp" {
 }
 
 variable "machines" {
-  default     = 1
+  default     = 2
   type        = number
   description = "Numbers of droplets to be created"
 }

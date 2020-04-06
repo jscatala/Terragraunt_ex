@@ -5,7 +5,3 @@ output "server_ip" {
 output "server_ids" {
   value = module.do.servers_ids
 }
-
-output "lb_ip" {
-  value = module.lb.loadbalancer_ip
-}
